@@ -300,12 +300,6 @@
   margin-top: 80px;
 }
 
-.table__text {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
 .triangle {
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;

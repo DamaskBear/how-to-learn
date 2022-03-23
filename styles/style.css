@@ -20,7 +20,6 @@
 
 .logo {
   width: 182px;
-  height: 32px;
 }
 
 .logo_place_header {
@@ -31,6 +30,7 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  height: 32px;
 }
 
 .header__title {
@@ -39,6 +39,7 @@
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
+  z-index: 2;
 }
 .header__subtitle {
   position: absolute;
@@ -48,6 +49,7 @@
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 
 .header__link {
@@ -81,7 +83,6 @@
 .description {
   margin-top: 100px;
   margin-bottom: 100px;
-  background-color: #f2f2f2;
 }
 
 .two-columns {
@@ -129,19 +130,12 @@
 /*section digits*/
 
 .digits {
-  margin-top: 0;
-  margin-bottom: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f2f2f2;
+  margin: 0 auto 100px;
 }
 
 .section-title {
   width:60%;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -150,10 +144,8 @@
 
 .section-subtitle {
   width: 60%;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto 0;
+
   text-align: center;
   line-height: 34px;
   font-size: 24px;
@@ -225,7 +217,7 @@
 
 .feynman__link {
   position: absolute;
-  height: 50%;
+  top: 50%;
   right: 48px;
   line-height: 51px;
   font-size: 36px;
@@ -307,11 +299,10 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
-  display: flex;
-  justify-content: flex-start;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  height: 35px;
 }
 
 .footer__author {
@@ -325,30 +316,30 @@
   left: 0;
 }
 
-.footer__column_content-info {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .footer__column-heading {
+  margin-top: 0;
   margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
-.footer__column-links ul {
-  padding-left: 0;
+.footer__column-links {
   margin-bottom: 16px;
   margin-top: 0;
   line-height: 30px;
   font-size: 18px;
-  list-style-type: none;
 }
+
+.footer__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}  
 
 .footer__column-link {
   color: #ffff;
-  
 }
 
 .footer__social-icon {
@@ -357,10 +348,4 @@
   width: 16px;
   height: 16px;
   margin-right: 10px;
-}
-
-.footer__column_content-social {
-  margin-bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
 }

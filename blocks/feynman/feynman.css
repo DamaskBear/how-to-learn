@@ -1,5 +1,5 @@
 .feynman {
-  height: 890px;
+  min-height: 890px;
   padding-top: 100px;
   margin: 0 auto;
   position: relative;
